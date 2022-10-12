@@ -10,7 +10,18 @@ console.log("after swap");
 console.log(my_number,your_number);
 
 
-var num1=100, num2=200, num3=300 
+var my_number1=300;
+var my_number2=400;
+var my_number3=500;
 console.log("Before swapping");
-console.log("num1, num2, num3");
+console.log(my_number1,my_number2,my_number3);
+
+temp=my_number1;
+my_number1=my_number2;
+my_number2=my_number3;
+
+
+
+console.log("after swapping");
+console.log(my_number1,my_number2,temp);
 
