@@ -15,3 +15,11 @@ console.log(typeof p_name);
 console.log(typeof age);
 console.log(typeof city);
 console.log(typeof married_status);
+
+var my_project_name;
+console.log(my_project_name);
+console.log("=========");
+console.log(typeof my_project_name);
+
+var my_properties=null;
+console.log(typeof my_properties);
