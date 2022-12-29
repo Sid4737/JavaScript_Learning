@@ -52,3 +52,11 @@ console.log("==================");
          addition(200, 300, 600);
          addition("Sachin"," Ramesh"," Tendulkar")
          addition("Hello"," good"," Morning")
+        
+         console.log("==============");
+         function test(arg1,arg2) {
+           console.log(arg1,arg2);
+            return "sachin";
+         }
+           var val = test(23,45,60);
+           console.log(val );
