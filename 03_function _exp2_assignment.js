@@ -20,10 +20,6 @@
        trianglearea(45,34);
        console.log("========================");
 
-       var largestNumber = function(arg1, arg2, arg3) {
-                 console.log("largest number is",arg3);            
-
-       }
-       largestNumber(679,867,956);
+       
       
      
