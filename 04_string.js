@@ -75,10 +75,39 @@ console.log(greet.slice(13));
 console.log(greet.slice(13, 17));
 
 console.log("============split()=================");
-
 var studentList = "Sunil , Anil, Andy, Jenny, Lata";
 var splitResult = studentList.split(",");
 console.log( splitResult);
+
+console.log("=====================================");
+
+var impQuote = `"Do or die" this attitude is very important for this training`;
+console.log(impQuote);
+
+console.log(`========Variable substitution==========`);
+var fName = "Virat";
+var lName = "Kohli";
+
+// First Name:${fName}  Last Name:${lName}
+
+console.log(`First Name: ${fName}  and  Last Name: ${lName} `);
+
+console.log("=============words count by split method======");
+
+var res = "Hey you are doing good keep it up";
+var endWith = res.endsWith("up");
+console.log(endWith);
+var startWith = res.startsWith("Hey");
+console.log(startWith);
+var boolean = res.endsWith("are");
+console.log(boolean);
+var stepSplit = res.split(" ");
+console.log(stepSplit);
+console.log(stepSplit.length);
+
+console.log("========================");
+var givenString = "Hey you are doing good keep it up";
+console.log(`2. Length of Given String is: ${givenString.length}`);
 
  
 
