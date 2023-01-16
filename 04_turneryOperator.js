@@ -20,9 +20,26 @@ console.log("======== Conditional check with Function Expression========");
        console.log(`Result is 1200 ${sscResult(1200)}`);// Invalid value
        console.log(`Result is "Ten" ${sscResult("Ten")}`);// Invalid value
        console.log(`Result is -10 ${sscResult(-10)}`);// Invalid value
-
+       console.log(`Result is null ${sscResult(null)}`);
+       console.log(`Result is undefined ${sscResult(undefined)}`);
        console.log("=============== Invalid data & valid data ================");
        var hscMarks = 200;
-       var resultPassOrFail = (hscMarks < 0 || hscMarks > 100) ? "Invalid data" : ((hscMarks>35) ? "Pass" : "Fail")
+       var resultPassOrFail = (hscMarks < 0 || hscMarks > 100) ? "Invalid data" : ((hscMarks>=35) ? "Pass" : "Fail")
        console.log(`Result of 200 is ${resultPassOrFail}`);
+
+       console.log(`=========== Duble equal(==) =====`);
+      var num1 = 10;
+      var num2 = "10";
+      console.log(typeof num1);
+      console.log(typeof num2);
+      console.log(typeof '100');
+
+      var result = num1==num2 ? "Equal" : "Not equal";
+      console.log(`num1==num2 result is ==> ${result}`);// Result is equal because it converts string to number 
+      console.log(`========== Triple equal (===) ===`);
+      var res = num1===num2 ? "Equal" : "Not equal";
+      console.log(`num1===num2 result is ===> ${res}`);// because it requires same datatype to conclude the result
+
+
+
       
