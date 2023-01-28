@@ -16,9 +16,11 @@ var num3 =  99;
 if (num1>num2 && num1>num3) {
     console.log(`You are greater man ${num1}`);
 }
+
 if (num2>num1 && num2>num3) {
     console.log(`You are greater man ${num2}`);
 }
+
 if (num3>num1 && num3>num2) {
     console.log(`You are greater man ${num3}`);
 }
