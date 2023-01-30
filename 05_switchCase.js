@@ -59,4 +59,40 @@ switch (dayNumber) {
     console.log(`Not valid value provided`);
     break;
 }
+console.log(`========= switch case statement by using function expression ======= `);
 
+var monthData = function (monthNumber) {
+  switch (monthNumber) {
+    case 1:
+      console.log(`This is January month`);
+      break;
+    case 2:
+      console.log(`This is February month`);
+      break;
+    case 3:
+      console.log(`This is March month`);
+      break;
+    case 4:
+      console.log(`This is April month`);
+      console.log(`My birthday is came in this month`);
+      break;
+    case 5:
+      console.log(`This is May month`);
+      break;
+    case 6:
+      console.log(`This is Jun month`);
+      break;
+    case 7:
+      console.log(`This is July month`);
+      console.log(`Heavy rainy season are there in this month `);
+      break;
+    default:
+      console.log(`This is not valid data`);
+      break;
+  }
+};
+monthData(4);
+monthData(7);
+monthData(5); 
+monthData(3);
+monthData(9);               
