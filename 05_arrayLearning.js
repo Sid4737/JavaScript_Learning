@@ -83,3 +83,76 @@ console.log(arrayOfNu);
 arrayOfNu.unshift(99);
 arrayOfNu.unshift(22 , 44, 55);
 console.log(arrayOfNu);
+
+console.log(`====== pop Method (removing last element)==== `);
+var  arrayOfNumber = [4, 5, 6, 8, 9, 33];
+let popResult = arrayOfNumber.pop();
+console.log(popResult);
+console.log(arrayOfNumber);
+
+console.log(`======= shift method()===== used for removing start element ====`);
+var  arrayOfNumber = [4, 5, 6, 8, 9, 33];
+let shiftResult = arrayOfNumber.shift();
+console.log(shiftResult);
+console.log(arrayOfNumber);
+
+console.log(`===== slice method()==== =======`);
+var arrayOfNumber = [4, 5, 6, 8, 9, 33, 66];
+let sliceResult = arrayOfNumber.slice(3);// slice method is used for print index number from 3 to end number
+let sliceRes = arrayOfNumber.slice(2,6);// slice method takes the index number from 2 to 5 (in 2, 6)i.e it 
+console.log(arrayOfNumber);             // does not take index number 6
+console.log(sliceResult);
+console.log(sliceRes);
+
+console.log(`====== splice method =======`);
+var arrayOfNumber = [4, 5, 6, 8, 9, 33, 66];
+console.log(arrayOfNumber);
+let spliceResult = arrayOfNumber.splice(3);// here in splice method deleted index 3 to end 
+console.log(`==== After using splice(3) method ======`); // deleted number will be printed
+console.log("Array after deleting elements", arrayOfNumber);
+console.log("Total deleted elements :", spliceResult);
+
+console.log(`====== after using splice(2, 3) method ====== `);
+var arrayOfNumber = [4, 5, 6, 8, 9, 33, 66];
+console.log(arrayOfNumber);
+let sliceRest = arrayOfNumber.splice(2, 3);
+console.log(`== After using splice(2, 3)method ==`);
+console.log(arrayOfNumber);
+console.log( `Total deleted elements :`, sliceRest);
+
+console.log(`====== Inserting element in the Array =======`);
+var arrayOfNumber = [4, 5, 6, 8, 9, 33, 66];
+console.log(arrayOfNumber);
+ let spliceR = arrayOfNumber.splice(2, 0, 88);// here we insert element 88 before index 2 & no replacement
+ console.log(arrayOfNumber); //hence we written (2, 0, 88) hence we get empty array[]
+ console.log(spliceR);
+arrayOfNumber.splice(1, 0, 55, 99, 22);// inserting element (55,99,22) before index 1 in final Array.
+console.log(arrayOfNumber);
+
+console.log(`======  Replacing element in the Array ======`);
+var arrayOfNumber = [4, 5, 6, 8, 9, 33, 66];
+console.log(arrayOfNumber);
+arrayOfNumber.splice(3, 1, 22);// here we replace element 8 by 22 by using splice as 
+console.log(arrayOfNumber); //(Index 3 ,replace 1 element ,by 22 number hence we written splice(3, 1 , 22)
+
+console.log(`====== Replacing element in the array when splice (2, 3, 99, 77)`);
+var arrayOfNumber = [4, 5, 6, 8, 9, 33, 66];
+console.log(arrayOfNumber);
+arrayOfNumber.splice(2, 3, 99, 77);// here we replace on index 2 for 3 element(6,8,9) as (99,77)
+console.log(arrayOfNumber);
+
+
+console.log(`===============  for of loop ==================`);
+var arrayOfNumber = [4, 5, 6, 8, 9, 33, 66];
+console.log(arrayOfNumber);
+for (const element of arrayOfNumber) {
+    console.log(element);         // here we replace object by variable i.e arrayOfNumber
+
+}                                      
+
+console.log(`======= include() method ============`);
+var arrayOfNumber = [4, 5, 6, 8, 9, 33, 66];
+let isAvailable = arrayOfNumber.includes(9); // in this we check whether the value is present or not in
+console.log(isAvailable);                    // in the Array (ex.if present then it print true if not it print false)
+
+
