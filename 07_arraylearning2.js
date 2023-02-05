@@ -21,6 +21,6 @@ console.log(typeof concatenationOfArray);
 console.log(`====== Resize an Array =============`);
 var arrayOfNumber = [4, 5, 6, 8, 9, 33, 66];
 console.log(arrayOfNumber.length);
-arrayOfNumber.length = 5;
+arrayOfNumber.length = 5; // we can increase or decrease the array length by using this formula.
 console.log(arrayOfNumber);
 console.log(arrayOfNumber.length);
